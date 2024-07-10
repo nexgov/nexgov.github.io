@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @mixin display-icon($icon, $direction, $size, $margin, $hover) {
   &::#{$direction} {
     @include add-background-svg("#{$icon}");
@@ -74,7 +76,7 @@
   $filename-base: map-get($icon-object, "name");
   $svg-height: map-get($icon-object, "svg-height");
   $svg-width: map-get($icon-object, "svg-width");
-  $aspect: $svg-width / $svg-height;
+  $aspect: math.div( $svg-width , $svg-height );
   $height: if(
     unitless(map-get($icon-object, "height")),
     units(map-get($icon-object, "height")),

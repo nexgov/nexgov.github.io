@@ -4,6 +4,8 @@ Functions
 ----------------------------------------
 */
 
+@use 'sass:math';
+
 // The following vars need to be set
 // here, before the rest of the system
 // variables are set
@@ -92,7 +94,7 @@ Remove the unit of a length
 
 @function strip-unit($number) {
   @if type-of($number) == "number" and not unitless($number) {
-    @return $number / ($number * 0 + 1);
+    @return math.div( $number , ($number * 0 + 1) );
   }
 
   @return $number;
@@ -387,8 +389,7 @@ the desired final units (currently rem)
 */
 
 @function spacing-multiple($unit) {
-  $grid-to-rem: ($system-spacing-grid-base * $unit) / $root-font-size-equiv *
-    1rem;
+  $grid-to-rem: math.div( ($system-spacing-grid-base * $unit), $root-font-size-equiv ) * 1rem;
 
   @return $grid-to-rem;
 }
@@ -423,7 +424,7 @@ queries
 */
 
 @function rem-to-user-em($grid-in-rem) {
-  $rem-to-user-em: ($grid-in-rem / 1rem) * 1em;
+  $rem-to-user-em: math.div( $grid-in-rem, 1rem ) * 1em;
 
   @return $rem-to-user-em;
 }
@@ -476,8 +477,8 @@ Converts a value in px to a value in rem
   @if not $pixels {
     @return false;
   }
-  $px-to-rem: ($pixels / $root-font-size-equiv) * 1rem;
-  $px-to-rem: round($px-to-rem * 100) / 100;
+  $px-to-rem: math.div( $pixels, $root-font-size-equiv) * 1rem;
+  $px-to-rem: math.div( round($px-to-rem * 100) , 100 );
 
   @return $px-to-rem;
 }
@@ -496,7 +497,7 @@ to a set target
     @return false;
   }
 
-  $this-scale: $system-base-cap-height * strip-unit($scale) / $cap-height * 1px;
+  $this-scale: math.div( ( $system-base-cap-height * strip-unit($scale) ),  $cap-height ) * 1px;
 
   @return px-to-rem($this-scale);
 }
@@ -571,9 +572,9 @@ a family and a line-height scale unit
 
   $this-cap: map-get($project-cap-heights, $family);
   $this-line-height: map-get($system-line-height, $scale);
-  $normalized-line-height: $this-line-height /
-    ($system-base-cap-height / $this-cap);
-  $normalized-line-height: round($normalized-line-height * 10) / 10;
+  $normalized-line-height: math.div( $this-line-height, 
+    math.div( $system-base-cap-height , $this-cap) );
+  $normalized-line-height: math.div( round($normalized-line-height * 10) , 10 );
 
   @return $normalized-line-height;
 }
@@ -782,7 +783,7 @@ grid.
   }
 
   $numeric-eq: map-get($spacing-to-value, $gap-size);
-  $numeric-eq-half: inspect($numeric-eq / 2);
+  $numeric-eq-half: inspect( math.div( $numeric-eq , 2 ) );
 
   @if not map-has-key($spacing-to-token, $numeric-eq-half) {
     @error '`#{$gap-size}` is not a valid USWDS gap size token. '
