@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency "jekyll", ">= 4.0", "< 5"
   s.add_runtime_dependency "jekyll-autoprefixer", "1.0.2"
+  s.add_runtime_dependency "execjs", "2.7.0"
 
   s.add_development_dependency "bundler"
   s.add_development_dependency "rake"
