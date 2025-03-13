@@ -1,9 +1,7 @@
 ---
 title: Home
 permalink: /
-
 layout: home
-
 hero:
   image: assets/uswds/img/hero.png
   callout:
