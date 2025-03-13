@@ -12,76 +12,74 @@
 #   links: primary
 #
 primary:
-  - text: Documentation
-    href: /docs/
-  - text: Navigation section
+  - text: Scuola
+    href: /school/
+  - text: Project
     links:
-      - text: Demo link A
-        href: /two/a/
-      - text: Demo link B
-        href: /two/b/
-      - text: Demo link C
-        href: /two/c/
-      - text: Demo link D
-        href: /two/a/
-      - text: Demo link E
-        href: /two/b/
-      - text: Demo link F
-        href: /two/c/
+      - text: UPID
+        href: /project/upid/
+      - text: Arena Giovani
+        href: /project/arenagiovani/
+      - text: Onlygabbyme
+        href: /project/onlygabbyme/
+      - text: Onlygabbyme Promotional campaign
+        href: /project/onlygabbyme/PromotionalCampaign/
+      - text: 18F
+        href: /project/18F/
   - text: Referenced section
     links: footer
-  - text: External link
-    href: https://18f.gsa.gov
+  - text: Gabriel Jones
+    href: https://gabrieljones.it
     external: true
 
 secondary:
-  - text: Documentation
-    href: /docs/
-  - text: Theme
-    href: /theme/
+  - text: Biblioteca
+    href: /Biblioteca/
+  - text: Education
+    href: /Education/
 
 docs:
-  - text: Sidenav Documentation
+  - text: Accesso all'informazione
     href: /docs/
-  - text: Sidenav External link
-    href: https://18f.gsa.gov
+  - text: Trasparenza
+    href: https://trasparenza.18f.it/
     external: true
 
 # Uncomment the 'links' sections below to use footer link columns
 # with the 'big' footer style.
 footer:
-  - text: Documentation
+  - text: Documenti
     href: /docs/
     links:
-      - text: Overview
-        href: /docs/
-      - text: Secondary documentation page
-        href: /docs/two/
-      - text: Tertiary docs
-        href: /docs/three/
-  - text: Navigation section
-    href: /docs/
+      - text: Trasparenza
+        href: https://trasparenza.18f.it/
+      - text: UPID
+        href: /project/upid/
+      - text: Onlygabbyme
+        href: /project/onlygabbyme/
+  - text: Education
+    href: /Education/
     links:
-      - text: Demo link A
-        href: /two/a/
-      - text: Demo link B
-        href: /two/b/
-      - text: Demo link C
-        href: /two/c/
-  - text: External links
-    href: /docs/
+      - text: Education
+        href: /Education/
+      - text: Oratorio
+        href: /Education/oratorio/
+      - text: MangiaLibri
+        href: /Education/mangialibri/
+  - text: Dashboard
+    href: /dbs/
     links:
       - text: 18F
-        href: https://18f.gsa.gov
+        href: https://18f.it
         external: true
-      - text: Technology Transformation Service
-        href: https://join.tts.gsa.gov/
+      - text: VersioneDigitale | UPID
+        href: https://upid.it/
         external: true
-      - text: code.gov
-        href: https://code.gov/
+      - text: Onlygabbyme (external)
+        href: https://onlygabbyme.it/
         external: true
   - text: Privacy policy
-    href: /docs/
+    href: https://gabrieljones.it/privacy-policy
 #   links:
 #     - text: Demo link A
 #       href: /three/a/
