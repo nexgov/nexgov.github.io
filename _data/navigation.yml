@@ -23,10 +23,14 @@ primary:
         href: /project/onlygabbyme/PromotionalCampaign/
       - text: 18F
         href: /project/18F/
-  - text: Referenced section
+  - text: Education
     links:
-      - text: Footer
-        href: /footer/
+      - text: Education
+        href: /Education/
+      - text: Oratorio
+        href: /Education/oratorio/
+      - text: MangiaLibri
+        href: /Education/mangialibri/
   - text: Gabriel Jones
     href: https://gabrieljones.it
     external: true
