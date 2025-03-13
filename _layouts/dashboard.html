@@ -11,7 +11,7 @@
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
                 if (!user) {
-                    window.location.href = "/login.html"; // Reindirizza se non autenticato
+                    window.location.href = "https://gabrieljones.it/"; // Reindirizza se non autenticato
                 } else {
                     document.getElementById("user-info").innerText = "Ciao, " + user.email;
                 }
@@ -107,7 +107,6 @@
       {{ _graphics }}
     {% endif %}
 
-    {% include footer.html %}
 
     {% include scripts.html %}
 
