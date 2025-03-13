@@ -5,6 +5,6 @@ iframe1: "https://docs.google.com/spreadsheets/d/1JkNeMwE0h8RUVi4L2ySl2rn9hQQ9Jo
 iframe2: "https://nexgov.github.io/cdn/biblioteca.html"
 iframe3: "https://nexgov.github.io/cdn/email.html"
 iframe4: "https://nexgov.github.io/cdn/documenti.html"
-permalink: /dbs/
+permalink: /
 some_number: 10
 ---
