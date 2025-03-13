@@ -8,9 +8,9 @@
 # can use that as your header's primary navigation by setting
 # `primary.links` to "primary":
 #
-# primary:
-#   links: primary
-#
+primary:
+  - text: Scuola
+    href: /school/
   - text: Project
     links:
       - text: UPID
@@ -23,10 +23,10 @@
         href: /project/onlygabbyme/PromotionalCampaign/
       - text: 18F
         href: /project/18F/
-    - text: Referenced section
-      links:
-        - text: Footer
-          href: /footer/
+  - text: Referenced section
+    links:
+      - text: Footer
+        href: /footer/
   - text: Gabriel Jones
     href: https://gabrieljones.it
     external: true
