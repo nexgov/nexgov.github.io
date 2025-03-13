@@ -1,6 +1,6 @@
 ---
 layout: dashboard
-title: dbs
+title: DashBoard
 iframe1: "https://docs.google.com/spreadsheets/d/1JkNeMwE0h8RUVi4L2ySl2rn9hQQ9JoR8Bdj4CPIW3tM/edit?usp=sharing"
 iframe2: "https://nexgov.github.io/cdn/biblioteca.html"
 iframe3: "https://nexgov.github.io/cdn/email.html"
