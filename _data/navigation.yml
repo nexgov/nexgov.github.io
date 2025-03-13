@@ -11,9 +11,6 @@
 # primary:
 #   links: primary
 #
-primary:
-  - text: Scuola
-    href: /school/
   - text: Project
     links:
       - text: UPID
