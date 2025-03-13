@@ -5,7 +5,7 @@ permalink: /
 layout: home
 
 hero:
-  image: /assets/uswds/img/hero.png
+  image: assets/uswds/img/hero.png
   callout:
     alt: "Benvenuto <p id="user-info"></p> in:"
     text: NEXGOV
