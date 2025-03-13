@@ -26,8 +26,10 @@ primary:
         href: /project/onlygabbyme/PromotionalCampaign/
       - text: 18F
         href: /project/18F/
-  - text: Referenced section
-    links: footer
+    - text: Referenced section
+      links:
+        - text: Footer
+          href: /footer/
   - text: Gabriel Jones
     href: https://gabrieljones.it
     external: true
